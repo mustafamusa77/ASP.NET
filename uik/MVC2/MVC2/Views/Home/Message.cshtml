@@ -1,0 +1,19 @@
+@model MVC2.Models.UserData
+
+<div class="container mt-5">
+    <div class="alert alert-success text-center p-4 shadow-lg rounded-3">
+        <h3 class="mb-4 display-6">🎉🎉  Congratulations!</h3>
+        <p class="lead">You meet all the criteria:</p>
+
+        <ul class="list-group list-group-flush mb-4 text-start">
+            <li class="list-group-item"><strong>Age:</strong> @Model.Age years</li>
+            <li class="list-group-item"><strong>Height:</strong> @Model.Height cm</li>
+            <li class="list-group-item"><strong>Weight:</strong> @Model.Weight kg</li>
+            <li class="list-group-item"><strong>Marks:</strong> @Model.Marks</li>
+        </ul>
+
+        <div class="alert alert-primary mt-3" role="alert">
+             <strong>Access Granted</strong> 
+        </div>
+    </div>
+</div>

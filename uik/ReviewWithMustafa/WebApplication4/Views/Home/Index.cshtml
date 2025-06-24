@@ -1,0 +1,27 @@
+﻿@model WebApplication4.Models.UserModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container mt-5">
+    <h2>Enter your Name and Age</h2>
+        <div>
+        
+            <div class="mb-3">
+                @Html.LabelFor(m => m.Name, new { @class = "form-label" })
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+            </div>
+            <div class="mb-3">
+                @Html.LabelFor(m => m.Age, new { @class = "form-label" })
+                @Html.TextBoxFor(m => m.Age, new { @class = "form-control", type = "number" })
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div class="text-danger mt-3">
+                    @Html.ValidationSummary()
+                </div>
+            }
+        
+        </div>
+</div>

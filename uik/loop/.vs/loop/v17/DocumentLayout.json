@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "M:\\uik\\loop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A19535E2-5B28-490D-81B4-0164512BA32F}|loop\\loop.csproj|m:\\uik\\loop\\loop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A19535E2-5B28-490D-81B4-0164512BA32F}|loop\\loop.csproj|solutionrelative:loop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A19535E2-5B28-490D-81B4-0164512BA32F}|loop\\loop.csproj|m:\\uik\\loop\\loop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A19535E2-5B28-490D-81B4-0164512BA32F}|loop\\loop.csproj|solutionrelative:loop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A19535E2-5B28-490D-81B4-0164512BA32F}|loop\\loop.csproj|m:\\uik\\loop\\loop\\views\\home\\loop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A19535E2-5B28-490D-81B4-0164512BA32F}|loop\\loop.csproj|solutionrelative:loop\\views\\home\\loop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "M:\\uik\\loop\\loop\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "loop\\Views\\Home\\Index.cshtml",
+              "ToolTip": "M:\\uik\\loop\\loop\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "loop\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T08:01:00.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "loop.cshtml",
+              "DocumentMoniker": "M:\\uik\\loop\\loop\\Views\\Home\\loop.cshtml",
+              "RelativeDocumentMoniker": "loop\\Views\\Home\\loop.cshtml",
+              "ToolTip": "M:\\uik\\loop\\loop\\Views\\Home\\loop.cshtml",
+              "RelativeToolTip": "loop\\Views\\Home\\loop.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T07:58:44.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "M:\\uik\\loop\\loop\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "loop\\Controllers\\HomeController.cs",
+              "ToolTip": "M:\\uik\\loop\\loop\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "loop\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T07:57:42.314Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

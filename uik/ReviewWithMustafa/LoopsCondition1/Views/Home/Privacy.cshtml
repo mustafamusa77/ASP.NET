@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<h1>@ViewBag.Counter</h1>
+<form method="post">
+    <input type="text" name="counter" value="@ViewBag.Counter" readonly hidden>
+    <button>Click</button>
+</form>
+<p>@ViewBag.Message</p>

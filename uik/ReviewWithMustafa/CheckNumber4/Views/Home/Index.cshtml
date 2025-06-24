@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@if(@ViewBag.Name != null && @ViewBag.Age != null)
+{
+   <p>Name : @ViewBag.Name</p>
+   <p>Age : @ViewBag.Age</p>
+}
+else
+{
+    <form method="post">
+    <input type="text" placeholder="Enter Your Name " name="Name" required>
+    <input type="number" placeholder="Enter Your Age" name="Age" required>
+    <button>Submit</button>
+    </form>
+    <p>@ViewBag.Message</p>
+}

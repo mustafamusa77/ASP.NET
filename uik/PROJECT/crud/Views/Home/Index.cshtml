@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model crud.Models.Contact
+@* @model List<crud.Models.Contact> *@
+@* @model List<crud.Models.Contact>
+    <form asp-action="Insert" method="post">
+        <input type="text" name="FirstName" placeholder="FirstName"><br>
+        <input type="text" name="LastName" placeholder="LastName"><br>
+        <input type="number" name="Marks" placeholder="Marks"><br>
+        <button type="submit">Insert</button>
+        <button type="submit">Delete</button>
+        <button type="submit">Update</button>
+    </form>
+<table>
+    <tr>
+        <th>Id  </th>
+        <th>FirstName  </th>
+        <th>LastName    </th>
+        <th>Marks      </th>
+        <th>Action     </th>
+    </tr>
+    @foreach (var Contact in Model)
+    {
+        <tr>
+            <td>@Contact.Id</td>
+            <td>@Contact.FirstName</td>
+            <td>@Contact.LastName</td>
+            <td>@Contact.Marks</td>
+            <td>
+                <form asp-action="Delete" method="post" style="display: inline;">
+                    <input type="hidden" name="id" value="@Contact.Id">
+                </form>
+            </td>
+        </tr>
+    }
+</table> *@
+
+
+
+
+
+
+
+
+
+
+<h2>Contact Form</h2>
+
+<form asp-action="Index" method="post" class="col-lg-4 form-group">
+    <div class="form-group">
+        <label>FirstName:</label>
+        <input asp-for="FirstName" class="form-control"/>
+        <span asp-validation-for="FirstName" style="color:red"></span>
+    </div>
+    <div class="form-group">
+        <label>LastName:</label>
+        <input asp-for="LastName" class="form-control"/>
+        <span asp-validation-for="LastName" style="color:red"></span>
+    </div>
+
+    <div  class="form-group">
+        <label>Marks:</label>
+        <input asp-for="Marks"  class="form-control" />
+        <span asp-validation-for="Marks" style="color:red"></span>
+    </div>
+    <div>
+        <button asp-action="Insert" type="Insert" class="btn btn-primary mt-3">Insert</button>
+        <button asp-action="New" type="New" class="btn btn-primary mt-3">New</button>
+        <button asp-action="Update" type="Update" class="btn btn-primary mt-3">Update</button>
+        <button asp-action="Delete"  type="Delete" class="btn btn-primary mt-3">Delete</button>
+    </div>
+    
+</form>
+
+@if (ViewBag.Message != null)
+{
+    <p style="color:green">@ViewBag.Message</p>
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+

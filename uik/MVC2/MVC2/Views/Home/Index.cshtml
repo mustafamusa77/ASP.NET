@@ -1,0 +1,16 @@
+﻿<div class="container mt-5">
+    <div class="card form-card shadow">
+        <div class="form-header text-center">
+            <h3>Step 1: Age</h3>
+        </div>
+        <div class="form-body">
+            <form asp-action="Index" method="post">
+                <div class="mb-3">
+                    <label for="age" class="form-label">Age</label>
+                    <input type="number" class="form-control" name="age" required min="18" max="30">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Next</button>
+            </form>
+        </div>
+    </div>
+</div>

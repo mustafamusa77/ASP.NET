@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Enter Your Age";
+}
+<h1 style="text-align: center; color: rgb(5, 70, 184);">Welcome to our projects</h1>
+<h2 style="text-align: center; font-size: 30px;">Enter Your Age (18-30)</h2>
+<form method="post" style="box-shadow: 1px 1px 2px rgb(97, 114, 174); width: 50%; display: flex; align-item: center; flex-direction: column; margin-left: 250px;">
+    <input type="number" name="age" required style="padding: 8px; border-radius: 10px;"/>
+    <button type="submit" style="margin-top: 15px; border: none; border-radius: 10px; background: rgba(47, 55, 210, 0.509); padding: 8px">Next</button>
+</form>
+<p style="color:red; text-align: center; font-size: 20px; margin-top: 20px;">@ViewBag.Message</p> 

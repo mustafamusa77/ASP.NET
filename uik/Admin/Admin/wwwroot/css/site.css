@@ -1,0 +1,95 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+header {
+  background-color: #009876;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.login_page form,
+  .house form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+}
+form button {
+  background-color: #009876;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  color: #fff;
+}
+.login_page form input,
+  .house form input,
+  .house form textarea {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    
+  }
+  .house form textarea {
+    height: 100px;
+  }
+
+  div#delete {
+    position: absolute;
+    background-color: #ddd;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    display: flex;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+  }
+  div#delete .info {
+    display: flex;
+    text-align: end;
+  }
+  div#delete form {
+    margin: 0;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  .logout {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #777;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 7px;
+  }

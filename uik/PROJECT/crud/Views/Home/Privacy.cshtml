@@ -1,0 +1,48 @@
+﻿@model List<crud.Models.Contact>
+@{
+    ViewData["Title"] = "Contact Info";
+}
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Marks</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var u in Model){
+            <tr>
+                <td>@u.Id</td>
+                <td>@u.FirstName</td>
+                <td>@u.LastName</td>
+                <td>@u.Marks</td>
+                <td>
+                     @Html.ActionLink("Edit", "Edit", new { id = u.Id }) |
+                     @Html.ActionLink("Delete", "Delete", new { id = u.Id })
+                </td>
+            </tr>
+            <br />
+            @Html.ActionLink("Add New", "New")
+            @using (Html.BeginForm(u.Id == 0 ? "Insert" : "Update", "Student"))
+            {
+                @Html.HiddenFor(m => u.Id)
+                <p>
+                    Firstname: @Html.TextBoxFor(m => u.FirstName)
+                </p>
+                <p>
+                    Lastname: @Html.TextBoxFor(m => u.LastName)
+                </p>
+                <p>
+                    Marks: @Html.TextBoxFor(m => u.Marks)
+                </p>
+                <button type="submit">@(u.Id == 0 ? "Insert" : "Update")</button>
+                    
+            }
+        }
+    </tbody>
+</table>

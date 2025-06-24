@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Welcome</h1>
+</div>
+<form action="form-group">
+    <div class="col-lg-12">
+        <label>Number</label>
+        <input class="form-control" asp-asp-for="Number">
+        <button type="submit" class="btn btn-primary">Check</button>
+    </div>
+</form>
+@* @if (Model != null && !string.IsNullOrEmpty(Model.Result))
+{
+    <h2><strong>Result</strong>@Model.Result</h2>
+} *@

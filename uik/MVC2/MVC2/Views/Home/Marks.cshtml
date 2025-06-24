@@ -1,0 +1,25 @@
+@model MVC2.Models.UserData
+
+<div class="container mt-5">
+    <div class="card form-card shadow">
+        <div class="form-header text-center">
+            <h3>Step 4: Marks</h3>
+        </div>
+        <div class="form-body">
+            <form asp-action="SubmitMarks" method="post">
+                
+                <input type="hidden" asp-for="Age" />
+                <input type="hidden" asp-for="Height" />
+                <input type="hidden" asp-for="Weight" />
+
+                
+                <div class="mb-3">
+                    <label asp-for="Marks" class="form-label">Marks:</label>
+                    <input type="number" asp-for="Marks" class="form-control" required min="70" max="100" />
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Finish</button>
+            </form>
+        </div>
+    </div>
+</div>

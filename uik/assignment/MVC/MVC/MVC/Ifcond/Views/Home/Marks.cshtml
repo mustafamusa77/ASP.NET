@@ -1,0 +1,11 @@
+@{
+    ViewBag.Title = "Enter Your  Marks";
+}
+<h2 style="text-align: center; font-size: 30px;">Enter Your Marks (Between 70 and 100)</h2>
+
+<form method="post" style="box-shadow: 2px 2px 3px rgb(43, 73, 177); width: 50%; display: flex; align-item: center; flex-direction: column; margin-left: 250px;">
+    <input type="number" name="marks" required style="padding: 8px; border-radius: 10px;"/>
+    <button type="submit" type="submit" style="margin-top: 15px; border: none; border-radius: 10px; background: rgba(47, 55, 210, 0.509); padding: 8px">Next</button>
+</form>
+
+<p style="color:red; text-align: center; font-size: 20px; margin-top: 20px;">@ViewBag.Message</p>

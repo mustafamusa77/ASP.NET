@@ -1,0 +1,22 @@
+@model MVC2.Models.UserData
+
+<div class="container mt-5">
+    <div class="card form-card shadow">
+        <div class="form-header text-center">
+            <h3>Step 3: Weight</h3>
+        </div>
+        <div class="form-body">
+            <form asp-action="SubmitWeight" method="post">
+                <input type="hidden" name="Age" value="@Model.Age" />
+                <input type="hidden" name="Height" value="@Model.Height" />
+
+                <div class="mb-3">
+                    <label for="Weight" class="form-label">Weight (kg):</label>
+                    <input type="number" class="form-control" name="Weight" required min="50" max="70" />
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Next</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @for (int i = 1; i <= 10; i++)
+    {
+        <p>@i</p>
+    }
+    <p>=============================================</p>
+    @{
+        int j = 1;
+        while (j <= 10)
+        {
+            <p>"number" @j</p>
+        }
+    }
+    <p>=============================================</p>
+    @{
+        int z = 1;
+        do
+        {
+            <p>"number" @z</p>
+        }while (z<=10);
+    }
+</div>

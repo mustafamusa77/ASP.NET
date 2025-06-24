@@ -1,0 +1,7 @@
+@model WebApplication1.Models.UserModel
+
+<form asp-action="Email">
+    <input type="number" name="Age" placeholder="Enter Your Age">
+    <input type="text" name="Name" value="@Model.Name" hidden>
+    <button>Next</button>
+</form>

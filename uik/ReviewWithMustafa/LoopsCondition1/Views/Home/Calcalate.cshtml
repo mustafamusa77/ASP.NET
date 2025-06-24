@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Calcalate Page";
+}
+
+<form method="post">
+    <input type="number" name="number" id="">
+    <button>Submit</button>
+</form>
+@* <p>@ViewBag.Number</p> *@
+
+@if(ViewBag.Number >= 20){
+    <p>This is number more 20</p>
+}
+<div class="box-containery">
+    @for(var i=1;i<=12;i++){
+    <p class="box">@ViewBag.Number * @i = @(ViewBag.Number * i)</p>
+}
+</div>

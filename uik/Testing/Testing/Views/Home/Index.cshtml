@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Testing.Models.Contact
+<h2>Contact Form</h2>
+
+<form asp-action="Index" method="post" class="col-lg-4 form-group">
+    <div class="form-group">
+        <label>Name:</label>
+        <input asp-for="Name" class="form-control"/>
+        <span asp-validation-for="Name" style="color:red"></span>
+    </div>
+
+    <div  class="form-group">
+        <label>Phone:</label>
+        <input asp-for="Phone"  class="form-control" />
+        <span asp-validation-for="Phone" style="color:red"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+</form>
+
+@if (ViewBag.Message != null)
+{
+    <p style="color:green">@ViewBag.Message</p>
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+

@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form method="post">
+    <input type="number" name="number" id="">
+    <button>Submit</button>
+</form>
+<p>@ViewBag.Number</p>
+
+@if(ViewBag.Number >= 20){
+    <p>This is number more 20</p>
+}
+<div class="box-container">
+    @for(var i=1;i<=ViewBag.Number;i++){
+    <p class="box">@i</p>
+}
+</div>

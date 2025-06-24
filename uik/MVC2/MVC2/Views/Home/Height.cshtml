@@ -1,0 +1,21 @@
+@model MVC2.Models.UserData
+
+<div class="container mt-5">
+    <div class="card form-card shadow">
+        <div class="form-header text-center">
+            <h3>Step 2: Height</h3>
+        </div>
+        <div class="form-body">
+            <form asp-action="Height" method="post">
+                <input type="hidden" asp-for="Age" />
+
+                <div class="mb-3">
+                    <label asp-for="Height" class="form-label">Height (cm):</label>
+                    <input type="number" asp-for="Height" class="form-control" required min="170" />
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Next</button>
+            </form>
+        </div>
+    </div>
+</div>

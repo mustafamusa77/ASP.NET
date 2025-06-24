@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<img src="~/images/bigman.png" alt="" width="400">
+<form method="post">
+    <input type="number" placeholder="Enter Your Month " name="month" required>
+    <button>Submit</button>
+</form>
+
+<p>@ViewBag.Message</p>
+<p>@ViewBag.Month</p>
